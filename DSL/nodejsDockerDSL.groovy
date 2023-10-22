@@ -14,7 +14,7 @@ job('Aplicacion Node.js Docker DSL') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('Dante205/nodejsapp')
+            repositoryName('dantedevops/nodejsapp')
             tag('${GIT_REVISION,length=7}')
             registryCredentials('DockerIDdanteaguilar100')
             forcePull(false)
